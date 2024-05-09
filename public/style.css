@@ -1,0 +1,81 @@
+body {
+  background-image: url('/public/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Increase shadow for depth */
+}
+
+.search-input {
+  width: calc(100% - 20px); /* Adjust width to accommodate padding */
+  padding: 10px;
+  border: none; /* Remove border to match Netflix's style */
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9); /* Lighten input background */
+  color: #333; /* Darken text color */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for dropdown */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: calc(100% - 20px); /* Adjust width to accommodate padding */
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff; /* Change text color to white */
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+}
+
+.btn-recommend {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px; /* Adjust margin to bring the button closer to the input area */
+  width: 300px;
+  padding: 10px;
+  background-color: #e50914; /* Netflix red */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-recommend:hover {
+  background-color: #b2070e; /* Darker red on hover */
+}

@@ -1,0 +1,55 @@
+
+body{
+    background-color: #000;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #000; /* Black background */
+    border-radius: 8px;
+    border: 2px solid #fff; /* White border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 280px; /* Reduced card width */
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    /* Slightly smaller poster size */
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e50914; /* Netflix red */
+}
+
+.info {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #fff; /* White text */
+}
+
+.rating {
+    color: #ffd700; /* Yellow-gold rating */
+}
