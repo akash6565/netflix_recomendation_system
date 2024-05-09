@@ -33,11 +33,6 @@ Here are some screenshots showcasing our application:
 - ![Recommendations](/screenshots/recommendations.png)
   Recommedations generated after user input
 
-## Demo
-
-Here is a demo using the application
-
-[![DEMO](/screenshots/yt.png)](http://www.youtube.com/watch?v=013HnsjD75w "DEMO")
 
 ## Contributing
 
